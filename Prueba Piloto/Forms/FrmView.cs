@@ -50,5 +50,15 @@ namespace Prueba_Piloto.Forms
             dgvEmpleados.DataSource = dt;
 
         }
+
+        private void txtFinder_TextChanged(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = dgvEmpleados.DataSource;
+            bs.Filter = $"Nombre like '%{txtFinder.Text}%'";
+            dgvEmpleados.DataSource = bs;
+
+
+        }
     }
 }

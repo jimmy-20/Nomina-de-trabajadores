@@ -35,8 +35,12 @@ namespace Prueba_Piloto.Forms
             // 
             // dgvNomina
             // 
+            this.dgvNomina.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvNomina.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dgvNomina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNomina.Location = new System.Drawing.Point(13, 26);
+            this.dgvNomina.Location = new System.Drawing.Point(12, 12);
             this.dgvNomina.Name = "dgvNomina";
             this.dgvNomina.RowHeadersWidth = 62;
             this.dgvNomina.RowTemplate.Height = 28;

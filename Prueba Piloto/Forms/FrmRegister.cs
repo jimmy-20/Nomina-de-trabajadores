@@ -40,8 +40,8 @@ namespace Prueba_Piloto.Forms
             decimal salarioNeto = salarioDev - deducciones;
 
             //PRESTACIONES SOCIALES
-            decimal InssP = salarioBasico * 0.0625m;
-            decimal Inatec = salarioBasico * 0.07m;
+            decimal InssP = salarioBasico * 0.215m;
+            decimal Inatec = salarioBasico * 0.02m;
             decimal vacaciones = salarioBasico * 0.0833m;
             decimal treceavo = vacaciones;
             decimal indemnizacion = treceavo;
@@ -107,6 +107,15 @@ namespace Prueba_Piloto.Forms
 
         private void FrmRegister_Load(object sender, EventArgs e)
         {
+            nudId.Value = Empleados.Id;
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtNombre.Clear();
+            txtCargo.Clear();
+            txtSalario.Clear();
+            txtHorasEx.Clear();
 
         }
     }

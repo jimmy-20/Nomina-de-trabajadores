@@ -53,6 +53,7 @@ namespace Prueba_Piloto.Forms
             this.txtFinder.Name = "txtFinder";
             this.txtFinder.Size = new System.Drawing.Size(459, 26);
             this.txtFinder.TabIndex = 1;
+            this.txtFinder.TextChanged += new System.EventHandler(this.txtFinder_TextChanged);
             // 
             // dgvEmpleados
             // 

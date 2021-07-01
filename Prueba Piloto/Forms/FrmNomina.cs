@@ -42,6 +42,11 @@ namespace Prueba_Piloto.Forms
             dt.Columns.Add("Indemnizacion");
             dt.Columns.Add("Salario a pagar");
 
+            if (Empleados.FindAll() == null)
+            {
+                return;
+            }
+
             foreach(Empleado em in Empleados.FindAll())
             {
                 DataRow row = dt.NewRow();

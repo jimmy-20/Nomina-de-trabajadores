@@ -10,10 +10,11 @@ namespace Prueba_Piloto.Clases.Models
     public class EmpleadoModel
     {
         private Empleado[] empleados;
+        public int Id { get; set; }
 
         public EmpleadoModel()
         {
-
+            Id = 1;
         }
 
         public void Add(Empleado e)
@@ -22,6 +23,7 @@ namespace Prueba_Piloto.Clases.Models
             {
                 empleados = new Empleado[1];
                 empleados[0] = e;
+                Id = 2;
                 return;
             }
 
@@ -29,6 +31,8 @@ namespace Prueba_Piloto.Clases.Models
             Array.Copy(empleados,temp,empleados.Length);
             temp[empleados.Length] = e;
             empleados = temp;
+
+            Id++;
         }
 
         public void Edit()
